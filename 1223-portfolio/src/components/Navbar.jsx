@@ -15,11 +15,11 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='hidden md:flex'>
-            <li>
+        <ul className='hidden md:flex justify-center'>
+            <li className="my-auto text-center hover:bg-pink-600">
                 Home
             </li>
-            <li>
+            <li className='hover:bg-pink-600'>
                 About
             </li>
             <li>
