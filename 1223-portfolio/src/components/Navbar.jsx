@@ -19,7 +19,7 @@ const Navbar = () => {
 
         {/* Menu */}
         <ul className='hidden md:flex justify-center'>
-            <li className="my-auto text-center hover:bg-pink-600">
+            <li className="text-center hover:bg-pink-600">
             <Link 
                 to="home" 
                 smooth={true} 

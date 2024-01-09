@@ -2,6 +2,7 @@ import React from 'react'
 
 import WorkImg from '../assets/projects/workImg.jpeg'
 import realEstate from '../assets/projects/realestate.jpg'
+import aiShirt from '../assets/projects/aitshirt_square.png'
 
 const Work = () => {
   return (
@@ -23,7 +24,7 @@ const Work = () => {
                 {/* Grid Item */}
                 <div 
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    style={{backgroundImage: `url(${WorkImg})`}} 
+                    style={{backgroundImage: `url(${aiShirt})`}} 
                 >
 
                     {/* Hover effects */}
@@ -32,10 +33,10 @@ const Work = () => {
                             React JS Application
                         </span>
                         <div className='pt-8 text-center'>
-                            <a href="/">
+                            <a href="https://teal-bublanina-352d32.netlify.app" target="_blank">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
                             </a>
-                            <a href="/">
+                            <a href="https://github.com/andrejs-is-on-the-computer/AI-tshirt-designer--react-3js" target="_blank">
                                 <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
                             </a>
                         </div>
