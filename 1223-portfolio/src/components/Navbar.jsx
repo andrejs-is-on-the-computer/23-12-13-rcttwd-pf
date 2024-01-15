@@ -12,7 +12,8 @@ const Navbar = () => {
 
   return (
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
-                bg-[#292524]  text-gray-300 border-b-[#44403c] border-b-2'>
+                bg-[#292524]  text-gray-300 border-b-[#44403c] border-b-2
+                z-50'>
         <div>
             <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
         </div>
@@ -29,10 +30,10 @@ const Navbar = () => {
             </li>
             <li className='hover:bg-pink-600'>
             <Link 
-                to="skills" 
+                to="about" 
                 smooth={true} 
                 duration={500}>
-                Skills
+                About
                 </Link>
             </li>
             <li>
