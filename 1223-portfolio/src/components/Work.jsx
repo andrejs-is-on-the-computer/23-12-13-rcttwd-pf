@@ -1,13 +1,12 @@
 import React from 'react'
-
-import aiShirt from '../assets/projects/aitshirt_square.png'
-import video from '../assets/projects/metoobe-square.png'
+import { projects } from '../constants'
+import { git } from '../assets'
 
 const Work = () => {
   return (
     <div name="work" className='w-full md:h-screen text-gray-300 bg-[#292524] text-gray-300'>
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='max-w-[1000px] mx-auto p-4'>
             
             <div className='pb-8'>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
@@ -18,15 +17,59 @@ const Work = () => {
                 </p>
             </div>
             {/* Container */}
-            <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
 
-                {/* Grid Item */}
+            <div className='mt-20 flex flex-wrap gap-7'>
+                {projects.map((project, index) => (
+                    <div className="bg-[#67625e] p-5 rounded-2xl sm:w-[360px] w-full">
+                        <div className='relative w-full h-[230px]'>
+                            <img
+                                src={project.image}
+                                alt='project_image'
+                                className='w-full h-full object-cover rounded-2xl'
+                            />
+
+                            <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+                                <div
+                                onClick={() => window.open(project.source_code_link, "_blank")}
+                                className='bg-[#67625e] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                >
+                                <img
+                                    src={git}
+                                    alt='source code'
+                                    className='w-1/2 h-1/2 object-contain'
+                                />
+                                </div>
+                            </div>
+                            </div>
+
+                            <div className='mt-5'>
+                            <h3 className='text-white font-bold text-[24px]'>{project.name}</h3>
+                            <p className='mt-2 text-secondary text-[14px]'>{project.description}</p>
+                            </div>
+
+                            <div className='mt-4 flex flex-wrap gap-2'>
+                            {project.tags.map((tag) => (
+                                <p
+                                key={`${tag.name}`}
+                                className={`text-[14px] ${tag.color}`}
+                                >
+                                #{tag.name}
+                                </p>
+                            ))}
+                            </div>
+                    </div>
+                ))}
+            </div>
+
+            {/* <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
+
+                
                 <div 
                     className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
                     style={{backgroundImage: `url(${aiShirt})`}} 
                 >
 
-                    {/* Hover effects */}
+                    
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             React JS Application
@@ -46,7 +89,7 @@ const Work = () => {
                     style={{backgroundImage: `url(${video})`}} 
                 >
 
-                    {/* Hover effects */}
+                   
                     <div className='opacity-0 group-hover:opacity-100'>
                         <span className='text-2xl font-bold text-white tracking-wider'>
                             React JS Application
@@ -63,7 +106,7 @@ const Work = () => {
                         
                     </div>
                 </div>
-            </div>
+            </div> */}
             
         </div>
     </div>
