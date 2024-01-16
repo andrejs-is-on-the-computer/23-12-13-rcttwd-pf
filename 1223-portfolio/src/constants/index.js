@@ -25,6 +25,7 @@ const projects = [
       ],
       image: aishirt,
       source_code_link: "https://github.com/andrejs-is-on-the-computer/AI-tshirt-designer--react-3js",
+      live_web_link: 'https://teal-bublanina-352d32.netlify.app/'
     },
     {
         name: "YouTube Homepage Clone",
@@ -42,6 +43,7 @@ const projects = [
         ],
         image: metoobe,
         source_code_link: "https://github.com/andrejs-is-on-the-computer/youtube-clone",
+        live_web_link: "https://celadon-dragon-007068.netlify.app/"
       },
     {
       name: "Finance Dashboard",
