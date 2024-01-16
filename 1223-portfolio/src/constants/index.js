@@ -13,15 +13,15 @@ const projects = [
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
+          color: "text-[#e79c25]",
         },
         {
           name: "threejs",
-          color: "pink-text-gradient",
+          color: "text-[#c38423]",
         },
         {
           name: "openAI",
-          color: "green-text-gradient",
+          color: "text-[#d3fbd8]",
         },
       ],
       image: aishirt,
@@ -36,11 +36,11 @@ const projects = [
         tags: [
           {
             name: "react",
-            color: "blue-text-gradient",
+            color: "text-[#e79c25]",
           },
           {
             name: "tailwind",
-            color: "pink-text-gradient",
+            color: "text-[#00c9af]",
           },
         ],
         image: metoobe,
@@ -55,15 +55,15 @@ const projects = [
       tags: [
         {
           name: "react",
-          color: "blue-text-gradient",
+          color: "text-[#e79c25]",
         },
         {
           name: "tailwind",
-          color: "pink-text-gradient",
+          color: "text-[#00c9af]",
         },
         {
           name: "tremor",
-          color: "green-text-gradient",
+          color: "text-[#00ac94]",
         },
       ],
       image: financedashboard,

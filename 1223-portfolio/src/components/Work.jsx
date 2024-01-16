@@ -19,8 +19,8 @@ const Work = () => {
             {/* Container */}
 
             <div className='mt-10 flex flex-wrap gap-7'>
-                {projects.map((project, index) => (
-                    <div className="bg-[#67625e] p-5 rounded-2xl sm:w-[360px] w-full">
+                {projects.map((project) => (
+                    <div className="bg-[#44403c] p-5 rounded-2xl sm:w-[360px] w-full">
                         <div className='relative w-full h-[230px]'>
                             <img
                                 src={project.image}
@@ -61,7 +61,7 @@ const Work = () => {
                             {project.tags.map((tag) => (
                                 <p
                                 key={`${tag.name}`}
-                                className={`text-[14px] ${tag.color}`}
+                                className={`text-[14px] ${tag.color} italic`}
                                 >
                                 #{tag.name}
                                 </p>
