@@ -14,8 +14,13 @@ const Navbar = () => {
     <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
                 bg-[#292524]  text-gray-300 border-b-[#44403c] border-b-2
                 z-50'>
-        <div>
-            <img src={Logo} alt="Logo Image" style={{width: '50px'}} />
+        <div 
+            onClick={() => window.open("https://www.linkedin.com/in/andrei-bicevskis-68253192/", "_blank")}
+            className='bg-pink-600 rounded-full p-3 cursor-pointer select-none text-xl font-black
+                        hover:bg-pink-900 duration-500'
+        >
+            {/* <img src={Logo} alt="Logo Image" style={{width: '50px'}} /> */}
+            AB
         </div>
 
         {/* Menu */}
@@ -122,25 +127,25 @@ const Navbar = () => {
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0a66c2]'>
                     <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
+                        href="https://www.linkedin.com/in/andrei-bicevskis-68253192/" target="_blank" >
                         Linkedin <FaLinkedin size={30} />
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#333]'>
                     <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
+                        href="https://github.com/andrejs-is-on-the-computer" target="_blank">
                         Github <FaGithub size={30} />
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#bd8e5b]'>
                     <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
+                        href="/" target="_blank">
                         Email <HiOutlineMail size={30} />
                     </a>
                 </li>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
                     <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/">
+                        href="/" target="_blank">
                         Resume <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>
