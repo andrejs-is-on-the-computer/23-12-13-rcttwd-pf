@@ -30,11 +30,11 @@ const Work = () => {
 
                             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                                 <div
-                                onClick={() => window.open(project.source_code_link, "_blank")}
+                                onClick={() => window.open(project.live_web_link, "_blank")}
                                 className='bg-[#67625e] mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
                                 >
                                 <img
-                                    src={git}
+                                    src={project.webicon}
                                     alt='source code'
                                     className='w-1/2 h-1/2 object-contain'
                                 />

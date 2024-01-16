@@ -1,7 +1,8 @@
 import {
     aishirt,
     financedashboard,
-    metoobe
+    metoobe,
+    website
 } from "../assets";
 
 const projects = [
@@ -24,6 +25,7 @@ const projects = [
         },
       ],
       image: aishirt,
+      webicon: website,
       source_code_link: "https://github.com/andrejs-is-on-the-computer/AI-tshirt-designer--react-3js",
       live_web_link: 'https://teal-bublanina-352d32.netlify.app/'
     },
@@ -42,6 +44,7 @@ const projects = [
           },
         ],
         image: metoobe,
+        webicon: website,
         source_code_link: "https://github.com/andrejs-is-on-the-computer/youtube-clone",
         live_web_link: "https://celadon-dragon-007068.netlify.app/"
       },
@@ -64,7 +67,9 @@ const projects = [
         },
       ],
       image: financedashboard,
+      webicon: website,
       source_code_link: "https://github.com/andrejs-is-on-the-computer/react-dash-tremor-tailwind",
+      live_web_link: "https://wondrous-quokka-37b4cb.netlify.app/"
     },
   ];
 
