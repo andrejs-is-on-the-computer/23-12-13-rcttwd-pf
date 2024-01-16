@@ -4,11 +4,11 @@ import { git } from '../assets'
 
 const Work = () => {
   return (
-    <div name="work" className="w-full bg-[#292524] text-gray-300 px-20 py-20">
+    <div name="work" className="min-h-screen w-full bg-[#292524] text-gray-300 py-20 sm:px-10 mx-auto">
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
+        <div className='mx-auto p-4 flex flex-col w-full h-full justify-center items-center'>
             
-            <div className=''>
+            <div className='max-w-[1000px]'>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
                     Work
                 </p>
@@ -17,10 +17,12 @@ const Work = () => {
                 </p>
             </div>
             {/* Container */}
-
-            <div className='mt-10 flex flex-wrap gap-7'>
+            {/* <div className='mt-10 grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-4'></div> */}
+            <div className='mt-10 flex flex-wrap justify-center gap-4'>
                 {projects.map((project) => (
-                    <div className="bg-[#44403c] p-5 rounded-2xl sm:w-[360px] w-full">
+                    <div className="bg-[#44403c] shadow-lg p-5 rounded-2xl max-w-[462px] 
+                                     hover:bg-[#514538] hover:shadow-[#56423c] duration-500
+                                     transition ease-in-out hover:-translate-y-1 hover:scale-105">
                         <div className='relative w-full h-[230px]'>
                             <img
                                 src={project.image}
@@ -31,17 +33,19 @@ const Work = () => {
                             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                                 <div
                                 onClick={() => window.open(project.live_web_link, "_blank")}
-                                className='bg-[#67625e] mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                className='mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer
+                                        bg-[#00aa94] hover:bg-[#d3fbd8] duration-500'
                                 >
                                 <img
                                     src={project.webicon}
-                                    alt='source code'
+                                    alt='live project link'
                                     className='w-1/2 h-1/2 object-contain'
                                 />
                                 </div>
                                 <div
                                 onClick={() => window.open(project.source_code_link, "_blank")}
-                                className='bg-[#67625e] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer
+                                        bg-[#67625e] hover:bg-[#b2ada8] duration-500'
                                 >
                                 <img
                                     src={git}
