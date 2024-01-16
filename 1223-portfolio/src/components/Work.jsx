@@ -4,21 +4,21 @@ import { git } from '../assets'
 
 const Work = () => {
   return (
-    <div name="work" className='w-full md:h-screen text-gray-300 bg-[#292524] text-gray-300'>
+    <div name="work" className="w-full bg-[#292524] text-gray-300 px-20 py-20">
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto p-4'>
+        <div className='max-w-[1000px] mx-auto p-4 flex flex-col justify-center w-full h-full'>
             
-            <div className='pb-8'>
+            <div className=''>
                 <p className='text-4xl font-bold inline border-b-4 border-pink-600'>
                     Work
                 </p>
-                <p className='py-6'>
+                <p className='pt-6'>
                     // Check out some of my previous projects
                 </p>
             </div>
             {/* Container */}
 
-            <div className='mt-20 flex flex-wrap gap-7'>
+            <div className='mt-10 flex flex-wrap gap-7'>
                 {projects.map((project, index) => (
                     <div className="bg-[#67625e] p-5 rounded-2xl sm:w-[360px] w-full">
                         <div className='relative w-full h-[230px]'>
@@ -29,6 +29,16 @@ const Work = () => {
                             />
 
                             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+                                <div
+                                onClick={() => window.open(project.source_code_link, "_blank")}
+                                className='bg-[#67625e] mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+                                >
+                                <img
+                                    src={git}
+                                    alt='source code'
+                                    className='w-1/2 h-1/2 object-contain'
+                                />
+                                </div>
                                 <div
                                 onClick={() => window.open(project.source_code_link, "_blank")}
                                 className='bg-[#67625e] w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
