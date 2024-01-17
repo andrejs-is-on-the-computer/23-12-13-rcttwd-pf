@@ -16,7 +16,7 @@ const Navbar = () => {
                 z-50'>
         <div 
             onClick={() => window.open("https://www.linkedin.com/in/andrei-bicevskis-68253192/", "_blank")}
-            className='bg-pink-600 rounded-full p-3 cursor-pointer select-none text-xl font-black
+            className='bg-pink-600 rounded-full p-2 cursor-pointer select-none text-xl font-black
                         hover:bg-pink-900 duration-500'
         >
             {/* <img src={Logo} alt="Logo Image" style={{width: '50px'}} /> */}
@@ -173,16 +173,10 @@ const Navbar = () => {
                         Github <FaGithub size={30} />
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#bd8e5b]'>
-                    <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/" target="_blank">
+                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2d9b8c]'>
+                    <a className='flex justify-between items-center w-full text-gray-200'
+                        href="mailto:andreibic89@gmail.com" target="_blank">
                         Email <HiOutlineMail size={30} />
-                    </a>
-                </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]'>
-                    <a className='flex justify-between items-center w-full text-gray-300'
-                        href="/" target="_blank">
-                        Resume <BsFillPersonLinesFill size={30} />
                     </a>
                 </li>
             </ul>

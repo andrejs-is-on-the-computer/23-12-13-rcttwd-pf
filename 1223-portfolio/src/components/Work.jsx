@@ -1,6 +1,7 @@
 import React from 'react'
 import { projects } from '../constants'
 import { git } from '../assets'
+import { FaEye, FaGithub } from "react-icons/fa"
 
 const Work = () => {
   return (
@@ -17,13 +18,14 @@ const Work = () => {
                 </p>
             </div>
             {/* Container */}
-            {/* <div className='mt-10 grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-4'></div> */}
             <div className='mt-10 flex flex-wrap justify-center gap-4'>
-                {projects.map((project) => (
+                {projects.map((project, index) => (
                     <div className="bg-[#44403c] shadow-lg p-5 rounded-2xl max-w-[462px] cursor-pointer
                                      hover:bg-[#514538] hover:shadow-[#56423c] duration-500
                                      transition ease-in-out hover:-translate-y-1 hover:scale-105"
-                        onClick={() => window.open(project.source_code_link, "_blank")}>
+                        onClick={() => window.open(project.source_code_link, "_blank")}
+                        index={project.name}
+                        >
                         <div className='relative w-full h-[230px]'>
                             <img
                                 src={project.image}
@@ -34,25 +36,27 @@ const Work = () => {
                             <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
                                 <div
                                 onClick={() => window.open(project.live_web_link, "_blank")}
-                                className='mx-1 w-10 h-10 rounded-full flex justify-center items-center cursor-pointer
-                                        bg-[#00aa94] hover:bg-[#d3fbd8] duration-500'
+                                className='mx-2 w-9 h-9 rounded-full flex justify-center items-center cursor-pointer
+                                        bg-[#4b7160] hover:bg-[#d3fbd8] duration-500'
                                 >
-                                <img
+                                {/* <img
                                     src={project.webicon}
                                     alt='live project link'
-                                    className='w-1/2 h-1/2 object-contain'
-                                />
+                                    className='h-7 object-contain'
+                                /> */}
+                                <FaEye className='text-gray-300' size={30} />
                                 </div>
                                 <div
                                 onClick={() => window.open(project.source_code_link, "_blank")}
-                                className='w-10 h-10 rounded-full flex justify-center items-center cursor-pointer
+                                className='w-9 h-9 rounded-full flex justify-center items-center cursor-pointer
                                         bg-[#67625e] hover:bg-[#b2ada8] duration-500'
                                 >
-                                <img
+                                {/* <img
                                     src={git}
                                     alt='source code'
                                     className='w-1/2 h-1/2 object-contain'
-                                />
+                                /> */}
+                                <FaGithub className='text-gray-300' size={30} />
                                 </div>
                             </div>
                             </div>
@@ -74,55 +78,7 @@ const Work = () => {
                             </div>
                     </div>
                 ))}
-            </div>
-
-            {/* <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4'>
-
-                
-                <div 
-                    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    style={{backgroundImage: `url(${aiShirt})`}} 
-                >
-
-                    
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://teal-bublanina-352d32.netlify.app" target="_blank">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/andrejs-is-on-the-computer/AI-tshirt-designer--react-3js" target="_blank">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div 
-                    className='shadow-lg shadow-[#040c16] group container rounded-md flex justify-center items-center mx-auto content-div'
-                    style={{backgroundImage: `url(${video})`}} 
-                >
-
-                   
-                    <div className='opacity-0 group-hover:opacity-100'>
-                        <span className='text-2xl font-bold text-white tracking-wider'>
-                            React JS Application
-                        </span>
-                        <div className='pt-8 text-center'>
-                            <a href="https://celadon-dragon-007068.netlify.app/" target="_blank">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Demo</button>
-                            </a>
-                            <a href="https://github.com/andrejs-is-on-the-computer/youtube-clone/tree/main" target="_blank">
-                                <button className='text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg'>Code</button>
-                            </a>
-                        </div>
-
-                        
-                    </div>
-                </div>
-            </div> */}
-            
+            </div>         
         </div>
     </div>
   )

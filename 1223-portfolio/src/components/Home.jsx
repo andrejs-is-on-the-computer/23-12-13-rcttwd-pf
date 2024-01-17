@@ -1,4 +1,5 @@
 import React from 'react'
+import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import { Link } from 'react-scroll'
 
@@ -22,7 +23,7 @@ const Home = () => {
             </div>
             
             <p className='text-[#8892b0] py-4 max-w-[700px] select-none'>
-                I'm a front-end developer...
+                I develop solutions, user interfaces and web applications
             </p>
             <Link
                 to="work"
@@ -40,6 +41,19 @@ const Home = () => {
                     </button>
                 </div>
             </Link>
+                    {/* Socials */}
+
+            <div className='sm:hidden flex pt-10'>
+                <a className='p-2 rounded-lg mr-4 hover:bg-[#0a66c2] hover:scale-110 duration-500'
+                    href="https://www.linkedin.com/in/andrei-bicevskis-68253192/" target="_blank" >
+                    <FaLinkedin className='text-gray-300' size={30} />
+                </a>
+
+                <a className='p-2 rounded-full hover:bg-[#67625e]  hover:scale-110 duration-500'
+                    href="https://github.com/andrejs-is-on-the-computer" target="_blank">
+                    <FaGithub className='text-gray-300' size={30} />
+                </a>
+            </div>
         </div>
     </div>
   )

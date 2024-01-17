@@ -20,11 +20,10 @@ const About = () => {
                 </div>
                 <div>
                     <p>
-                        I am passionate about building excellent software that improves
-                        the lives of those around me. I specialize in creating software
-                        for clients ranging from individuals and small-busiessness all
-                        the way to large enterprise corporations. What would you do if
-                        you had a software expert available at your fingertips?
+                    I'm a skilled software developer with experience in TypeScript and JavaScript, 
+                    and expertise in frameworks like React, Node.js, and Three.js. I'm a quick learner 
+                    and collaborate closely with clients to create efficient, scalable, and user-friendly 
+                    solutions that solve real-world problems. Let's work together to bring your ideas to life!
                     </p>
                 </div>
             </div>
