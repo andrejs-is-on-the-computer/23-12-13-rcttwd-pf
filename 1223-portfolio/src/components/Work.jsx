@@ -20,9 +20,10 @@ const Work = () => {
             {/* <div className='mt-10 grid grid-cols-1 xl:grid-cols-3 lg:grid-cols-2 gap-4'></div> */}
             <div className='mt-10 flex flex-wrap justify-center gap-4'>
                 {projects.map((project) => (
-                    <div className="bg-[#44403c] shadow-lg p-5 rounded-2xl max-w-[462px] 
+                    <div className="bg-[#44403c] shadow-lg p-5 rounded-2xl max-w-[462px] cursor-pointer
                                      hover:bg-[#514538] hover:shadow-[#56423c] duration-500
-                                     transition ease-in-out hover:-translate-y-1 hover:scale-105">
+                                     transition ease-in-out hover:-translate-y-1 hover:scale-105"
+                        onClick={() => window.open(project.source_code_link, "_blank")}>
                         <div className='relative w-full h-[230px]'>
                             <img
                                 src={project.image}
