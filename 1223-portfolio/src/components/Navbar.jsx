@@ -24,103 +24,139 @@ const Navbar = () => {
         </div>
 
         {/* Menu */}
-        <ul className='hidden md:flex justify-center'>
-            <li className="text-center hover:bg-pink-600">
+        <ul className='hidden md:flex h-full'>
             <Link 
                 to="home" 
                 smooth={true} 
-                duration={500}>
-                Home
-                </Link>
-            </li>
-            <li className='hover:bg-pink-600'>
+                duration={500}
+                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                    <li>
+                        Home
+                    </li>
+            </Link>
+            
             <Link 
                 to="about" 
                 smooth={true} 
-                duration={500}>
-                About
-                </Link>
-            </li>
-            <li>
+                duration={500}
+                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                    <li>
+                        About
+                    </li>
+            </Link>
+
             <Link 
                 to="skills" 
                 smooth={true} 
-                duration={500}>
-                Skills
-                </Link>
-            </li>
-            <li>
+                duration={500}
+                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                    <li>
+                        Skills
+                    </li>
+            </Link>
+
             <Link 
                 to="work" 
                 smooth={true} 
-                duration={500}>
-                Work
-                </Link>
-            </li>
-            <li>
+                duration={500}
+                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                    <li>
+                        Work
+                    </li>
+            </Link>
+
             <Link 
                 to="contact" 
                 smooth={true} 
-                duration={500}>
-                Contact
-                </Link>
-            </li>
+                duration={500}
+                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                    <li>
+                        Contact
+                    </li>
+            </Link>
         </ul>
         
 
         {/* Hamburger */}
-        <div onClick={handleClick} className='md:hidden z-10'>
+        <div onClick={handleClick} className='md:hidden z-10 bg-[#59564c] p-3 rounded-md'>
             {!nav ? <FaBars /> : <FaTimes />}
         </div>
 
+        {/* {!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'} */}
+
         {/* Mobile Menu */}
-        <ul className={!nav ? 'hidden' : 'absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center'}>
-            <li className='py-6 text-4xl'>
-            <Link 
-                onClick={handleClick}
-                to="home" 
-                smooth={true} 
-                duration={500}>
-                Home
+        {/* <div className={!nav ? 'hidden opacity-0' : 
+                `absolute top-[79px] right-0 flex flex-col justify-center items-center rounded-bl-lg
+                w-40
+                bg-[#67625e] transition-opacity duration-500 opacity-100`}> */}
+        
+            <ul className={!nav ? 'hidden opacity-0 w-0' : 
+                `absolute top-[79px] right-0 flex flex-col justify-center items-center rounded-bl-lg w-40 bg-[#67625e]`}>
+                <Link 
+                    onClick={handleClick}
+                    to="home" 
+                    smooth={true} 
+                    duration={500}
+                    className='py-4 w-full cursor-pointer border-b-[1px] border-[#44403c]'
+                >
+                    <li>
+                        Home
+                    </li>
+                    
                 </Link>
-            </li>
-            <li className='py-6 text-4xl'>
-            <Link 
-                onClick={handleClick}
-                to="skills" 
-                smooth={true} 
-                duration={500}>
-                Skills
+
+                <Link 
+                    onClick={handleClick}
+                    to="about" 
+                    smooth={true} 
+                    duration={500}
+                    className='py-4 w-full cursor-pointer border-b-[1px] border-[#44403c]'
+                >
+                    <li>
+                        About
+                    </li>
+                    
                 </Link>
-            </li>
-            <li className='py-6 text-4xl'>
-            <Link 
-                onClick={handleClick}
-                to="skills" 
-                smooth={true} 
-                duration={500}>
-                Skills
+
+                <Link 
+                    onClick={handleClick}
+                    to="skills" 
+                    smooth={true} 
+                    duration={500}
+                    className='py-4 w-full cursor-pointer border-b-[1px] border-[#44403c]'
+                >
+                    <li>
+                        Skills
+                    </li>
+                    
                 </Link>
-            </li>
-            <li className='py-6 text-4xl'>
-            <Link 
-                onClick={handleClick}
-                to="work" 
-                smooth={true} 
-                duration={500}>
-                Work
+
+                <Link 
+                    onClick={handleClick}
+                    to="work" 
+                    smooth={true} 
+                    duration={500}
+                    className='py-4 w-full cursor-pointer border-b-[1px] border-[#44403c]'
+                >
+                    <li>
+                        Work
+                    </li>
+                    
                 </Link>
-            </li>
-            <li className='py-6 text-4xl'>
-            <Link 
-                onClick={handleClick}
-                to="contact" 
-                smooth={true} 
-                duration={500}>
-                Contact
+
+                <Link 
+                    onClick={handleClick}
+                    to="contact" 
+                    smooth={true} 
+                    duration={500}
+                    className='py-4 w-full cursor-pointer'
+                >
+                    <li>
+                        Contact
+                    </li>
+                    
                 </Link>
-            </li>
-        </ul>
+            </ul>
 
         {/* Social Icons */}
         <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
