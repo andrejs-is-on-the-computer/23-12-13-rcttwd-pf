@@ -54,9 +54,9 @@ const Contact = () => {
     <div name="contact" className="w-full h-screen bg-[#44403c] md:grid grid-cols-5">
       
       {/* max-w-[1000px] mx-auto px-12 ml-10 flex flex-col justify-center h-full */}
-      <div className='col-span-1 hidden md:flex'>1</div>
+      <div className='col-span-1 hidden md:flex'></div>
       {/* Form Element */}
-      {!loading ? <div className='col-span-3 flex flex-col justify-center px-6 lg:px-24 md:px-12 sm:px-10'>
+      {!loading ? <div className='col-span-3 flex flex-col justify-center px-6 lg:px-24 sm:px-16'>
         <div className='pt-8'>
             <p className='text-4xl font-bold inline border-b-4 border-pink-600 text-gray-300'>Contact</p>
             <p className='text-gray-300 py-4'>// Please send me a message :)</p>
@@ -111,7 +111,7 @@ const Contact = () => {
       }
       
 
-      <div className='col-span-1 hidden md:flex'>3</div>
+      <div className='col-span-1 hidden md:flex'></div>
 
     </div>
   )

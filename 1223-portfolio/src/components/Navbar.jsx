@@ -11,7 +11,7 @@ const Navbar = () => {
     const handleClick = () => setNav(!nav);
 
   return (
-    <div className='fixed w-full h-[80px] flex justify-between items-center px-4 
+    <div className='fixed w-full h-[60px] sm:h-[80px] flex justify-between items-center px-2 sm:px-4 
                 bg-[#292524]  text-gray-300 border-b-[#44403c] border-b-2
                 z-50'>
         <div 
@@ -91,7 +91,7 @@ const Navbar = () => {
                 bg-[#67625e] transition-opacity duration-500 opacity-100`}> */}
         
             <ul className={!nav ? 'hidden opacity-0 w-0' : 
-                `absolute top-[79px] right-0 flex flex-col justify-center items-center rounded-bl-lg w-40 bg-[#67625e]`}>
+                `absolute top-[58px] right-0 flex flex-col justify-center items-center rounded-bl-lg w-40 bg-[#67625e]`}>
                 <Link 
                     onClick={handleClick}
                     to="home" 
@@ -159,7 +159,7 @@ const Navbar = () => {
             </ul>
 
         {/* Social Icons */}
-        <div className='hidden lg:flex fixed flex-col top-[35%] left-0'>
+        <div className='hidden sm:flex fixed flex-col top-[35%] left-0'>
             <ul>
                 <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#0a66c2]'>
                     <a className='flex justify-between items-center w-full text-gray-300'
