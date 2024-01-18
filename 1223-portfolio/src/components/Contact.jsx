@@ -51,7 +51,7 @@ const Contact = () => {
   }
 
   return (
-    <div name="contact" className="w-full h-screen pt-16 bg-[#44403c] md:grid grid-cols-5">
+    <div name="contact" className="w-full h-full min-h-screen pt-16 bg-[#44403c] md:grid grid-cols-5">
       
       {/* max-w-[1000px] mx-auto px-12 ml-10 flex flex-col justify-center h-full */}
       <div className='col-span-1 hidden md:flex'></div>
