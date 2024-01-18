@@ -13,11 +13,11 @@ const Home = () => {
 
             <div className='text-center sm:text-left'>
                 <h1 className='text-4xl sm:text-7xl font-bold py-1 text-[#ccd6f6] select-none
-                            hover:bg-pink-600 hover:text-[#1c1917] duration-1000'>
+                            hover:bg-[#00c9af] hover:text-[#1c1917] duration-1000'>
                     Andrejs Bicevskis
                 </h1>
                 <h2 className='text-4xl sm:text-7xl font-bold text-[#8892b0] select-none
-                                hover:bg-pink-600 hover:text-[#1c1917] duration-1000'>
+                                hover:bg-[#00c9af] hover:text-[#1c1917] duration-1000'>
                     Front End Developer.
                 </h2>
             </div>
@@ -32,10 +32,10 @@ const Home = () => {
             >
                 <div className='flex justify-center items-center'>
                     <button className='group text-white border-2 px-6 py-3 my-2 flex items-center 
-                                    hover:bg-pink-600 hover:border-pink-600 hover:font-bold duration-300'>
+                                    hover:bg-[#00c9af] hover:border-[#00c9af] hover:text-[#1c1917] hover:font-bold duration-500'>
                         View Work 
                         &nbsp;
-                        <span className='group-hover:rotate-90 duration-300'>
+                        <span className='group-hover:rotate-90 duration-500'>
                             <HiArrowNarrowRight className='' />
                         </span>
                     </button>
