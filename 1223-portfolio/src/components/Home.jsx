@@ -2,13 +2,19 @@ import React from 'react'
 import { FaGithub, FaLinkedin } from 'react-icons/fa'
 import {HiArrowNarrowRight} from 'react-icons/hi'
 import { Link } from 'react-scroll'
+import { worldmap } from '../assets'
+import map from './WorldMap.svg'
 
 const Home = () => {
   return (
-    <div name="home" className='w-full h-screen bg-[#44403c]'>
-        
+    <div name="home" className="w-full h-screen bg-[#44403c]">
+
+        {/* <div className='h-full w-full fixed inline-flex flex-nowrap z-0'>
+            <img className='object-none z-0' src={worldmap} />
+        </div> */}
+
         {/* Container */}
-        <div className='max-w-[1000px] mx-auto px-16 flex flex-col justify-center h-full'>
+        <div className='max-w-[1000px] mx-auto px-16 flex flex-col justify-center h-full z-20'>
             {/* <p className='text-pink-600 select-none'>Hi, my name is</p> */}
 
             <div className='text-center sm:text-left'>
