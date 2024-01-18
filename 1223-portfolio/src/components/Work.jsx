@@ -1,7 +1,7 @@
 import React from 'react'
 import { projects } from '../constants'
 import { git } from '../assets'
-import { FaEye, FaGithub } from "react-icons/fa"
+import { FaGlobe, FaGithub } from "react-icons/fa"
 
 const Work = () => {
   return (
@@ -37,26 +37,30 @@ const Work = () => {
                                 <div
                                 onClick={() => window.open(project.live_web_link, "_blank")}
                                 className='mx-2 w-9 h-9 rounded-full flex justify-center items-center cursor-pointer
-                                        bg-[#4b7160] hover:bg-[#d3fbd8] duration-500'
+                                        group bg-[#4b7160] hover:bg-[#d3fbd8] duration-500'
                                 >
                                 {/* <img
                                     src={project.webicon}
                                     alt='live project link'
                                     className='h-7 object-contain'
                                 /> */}
-                                <FaEye className='text-gray-300' size={30} />
+                                <FaGlobe 
+                                    className='text-[#00ac94] group-hover:text-[#005b4a] duration-500' 
+                                    size={28} />
                                 </div>
                                 <div
                                 onClick={() => window.open(project.source_code_link, "_blank")}
                                 className='w-9 h-9 rounded-full flex justify-center items-center cursor-pointer
-                                        bg-[#67625e] hover:bg-[#b2ada8] duration-500'
+                                        group bg-[#67625e] hover:bg-[#b2ada8] duration-500'
                                 >
                                 {/* <img
                                     src={git}
                                     alt='source code'
                                     className='w-1/2 h-1/2 object-contain'
                                 /> */}
-                                <FaGithub className='text-gray-300' size={30} />
+                                <FaGithub 
+                                    className='text-gray-300 group-hover:text-[#44403c] duration-500' 
+                                    size={28} />
                                 </div>
                             </div>
                             </div>

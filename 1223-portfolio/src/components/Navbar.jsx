@@ -1,9 +1,8 @@
-import React, { useState } from 'react'
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa'
-import { HiOutlineMail } from 'react-icons/hi'
-import { BsFillPersonLinesFill } from 'react-icons/bs'
-import Logo from '../assets/logo1.png'
-import {Link} from 'react-scroll'
+import React, { useState } from 'react';
+import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { HiOutlineMail } from 'react-icons/hi';
+import {Link} from 'react-scroll';
+import { ab_sm } from '../assets';
 
 const Navbar = () => {
 
@@ -16,11 +15,11 @@ const Navbar = () => {
                 z-50'>
         <div 
             onClick={() => window.open("https://www.linkedin.com/in/andrei-bicevskis-68253192/", "_blank")}
-            className='bg-pink-600 rounded-full p-2 cursor-pointer select-none text-xl font-black
-                        hover:bg-pink-900 duration-500'
+            className='bg-[#44403c] rounded-full p-2 cursor-pointer select-none text-xl font-black
+                        hover:bg-[#375e63] duration-500'
         >
-            {/* <img src={Logo} alt="Logo Image" style={{width: '50px'}} /> */}
-            AB
+            <img src={ab_sm} alt="Logo Image" style={{width: '50px'}} />
+            {/* AB */}
         </div>
 
         {/* Menu */}
@@ -29,7 +28,8 @@ const Navbar = () => {
                 to="home" 
                 smooth={true} 
                 duration={500}
-                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                className="py-[24px] w-[85px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
                     <li>
                         Home
                     </li>
@@ -39,7 +39,8 @@ const Navbar = () => {
                 to="about" 
                 smooth={true} 
                 duration={500}
-                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                className="py-[24px] w-[85px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
                     <li>
                         About
                     </li>
@@ -49,7 +50,8 @@ const Navbar = () => {
                 to="skills" 
                 smooth={true} 
                 duration={500}
-                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                className="py-[24px] w-[85px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
                     <li>
                         Skills
                     </li>
@@ -59,7 +61,8 @@ const Navbar = () => {
                 to="work" 
                 smooth={true} 
                 duration={500}
-                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                className="py-[24px] w-[85px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
                     <li>
                         Work
                     </li>
@@ -69,7 +72,8 @@ const Navbar = () => {
                 to="contact" 
                 smooth={true} 
                 duration={500}
-                className="py-[24px] w-[85px] cursor-pointer hover:bg-pink-600 h-full duration-500 text-center">
+                className="py-[24px] w-[85px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
                     <li>
                         Contact
                     </li>
