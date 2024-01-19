@@ -19,7 +19,7 @@ const Skills = () => {
           <p className='py-4'>// These are some of the technologies I've worked with</p>
         </div>
 
-        <div className='stage-cube-cont flex my-40 select-none'>
+        <div className='stage-cube-cont flex mb-40 mt-28 sm:mb-56 sm:mt-40 select-none'>
           <div className='cubespinner'>
               <div className='face1'>
                 <div className='bg-[#e79c25] relative flex h-[10px] w-screen items-center justify-center 
