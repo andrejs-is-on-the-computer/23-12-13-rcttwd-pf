@@ -61,8 +61,10 @@ const Contact = () => {
         <div className='pt-8'>
             <p className='text-4xl font-bold inline border-b-4 border-[#00c9af] text-gray-300'>Contact</p>
             <p className='text-gray-300 py-4'>
-                        If you would like to get in contact with me,
-                        don't hesitate to contact me using the form below.</p>
+                        If you would like to get in touch,
+                        don't hesitate to contact me using 
+                        the form below or send me an email 
+                        directly.</p>
         </div>
 
         <form 
