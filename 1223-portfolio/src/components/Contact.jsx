@@ -110,11 +110,13 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
-        <div className='text-gray-300 py-4'>
+        <a className='p-4 text-white border-2
+          hover:bg-[#00c9af] hover:border-[#00c9af] hover:text-[#1c1917] hover:font-bold duration-500'
+          href="mailto:andreibic89@gmail.com" target="_blank">
           Andrejs Bicevskis,
           <br />
           <span>andreibic89@gmail.com</span>
-        </div>
+        </a>
       </div>
       
       : 

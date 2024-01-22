@@ -172,16 +172,32 @@ const Navbar = () => {
                         Github <FaGithub size={30} />
                     </a>
                 </li>
-                <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2d9b8c]'>
-                    <a className='flex justify-between items-center w-full text-gray-200'
-                        href="mailto:andreibic89@gmail.com" target="_blank">
-                        Email <HiOutlineMail size={30} />
-                    </a>
-                </li>
+                <Link
+                    to="contact" 
+                    smooth={true} 
+                    duration={500}>
+                    <li className='w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#2d9b8c]'>
+                        <a className='flex justify-between items-center w-full text-gray-200'>
+                            Email <HiOutlineMail size={30} />
+                        </a>
+                    </li>
+                </Link>
+                
             </ul>
         </div>
     </div>
   )
 }
+
+{/* <Link 
+                to="contact" 
+                smooth={true} 
+                duration={500}
+                className="py-[24px] w-[90px] cursor-pointer h-full text-center
+                        hover:bg-[#00c9af] hover:text-black duration-500">
+                    <li>
+                        Contact
+                    </li>
+            </Link> */}
 
 export default Navbar
