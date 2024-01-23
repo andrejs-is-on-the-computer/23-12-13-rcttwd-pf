@@ -1,4 +1,5 @@
 import React, { useRef, useState } from 'react'
+import { FaCircleNotch } from "react-icons/fa";
 
 import emailjs from '@emailjs/browser'
 
@@ -56,7 +57,7 @@ const Contact = () => {
       {/* max-w-[1000px] mx-auto px-12 ml-10 flex flex-col justify-center h-full */}
       <div className='col-span-1 hidden md:flex'></div>
       {/* Form Element */}
-      {!loading ? <div className='col-span-3 flex flex-col justify-center 
+      {loading ? <div className='col-span-3 flex flex-col justify-center 
                                 px-6 lg:px-52 sm:px-16'>
         <div className='pt-8'>
             <p className='text-4xl font-bold inline border-b-4 border-[#00c9af] text-gray-300'>Contact</p>
@@ -76,30 +77,36 @@ const Contact = () => {
           </div>
 
           {/* Inputs */}
+          {/*appearance-none leading-tight focus:outline-none focus:shadow-outline" */}
                 <input 
-                  className="bg-[#ccd6f6] p-2" 
+                  className="bg-[#ccd6f6] p-2 shadow focus:outline-none focus:shadow-outline" 
                   type="text" 
                   placeholder='Name' 
                   name="name"
                   value={form.name}
-                  onChange={handleChange} 
+                  onChange={handleChange}
+                  required 
                 />
+                <span className="text-transparent">Bottom Left label</span>
                 <input 
-                  className="my-4 p-2 
+                  className="p-2 
                   bg-[#ccd6f6]" 
                   type="email" 
                   placeholder='Email' 
                   name='email' 
                   value={form.email}
                   onChange={handleChange}
+                  required
                 />
+                <span className="text-transparent">Bottom Left label</span>
                 <textarea 
                   className='bg-[#ccd6f6] p-2' 
                   name="message" 
-                  rows="10" 
+                  rows="8" 
                   placeholder='Message'
                   value={form.message}
                   onChange={handleChange}
+                  required
                 >
 
                 </textarea>
@@ -121,7 +128,13 @@ const Contact = () => {
       
       : 
       
-      <div className='col-span-3 px-6 lg:px-24 md:px-12 sm:px-10'>Loading</div>
+      <div className='col-span-3 flex m-auto justify-center align-middle
+      px-6 lg:px-52 sm:px-16'>
+        <div className='text-white flex mr-6'>
+          Sending
+        </div>
+        <FaCircleNotch className='flex animate-spin -ml-1 mr-3 h-5 w-5 text-white' />
+      </div>
 
       }
       
