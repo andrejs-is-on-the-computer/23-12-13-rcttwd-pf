@@ -9,10 +9,24 @@ import map from './WorldMap.svg'
 const Home = () => {
   return (
     <div name="home" className="w-full h-screen bg-[#44403c]">
-        <div 
-        className="w-full h-screen bg-[#44403c] bg-no-repeat bg-center z-0 fixed" 
-        style={{backgroundImage: `url(${worldmap})`}}>
+
+        <div className='h-screen w-full inline-flex flex-nowrap absolute overflow-hidden 
+                        opacity-50'>
+            <div className='h-screen flex items-center justify-center align-middle 
+            md:justify-start [&_img]:mx-8 [&_img]:max-w-none animate-infinite-scroll'
+            >
+                <img className='h-screen' style={{height: '120vh'}} src={worldmap} />
+            </div>
+            <div className="flex items-center justify-center md:justify-start align-middle 
+            [&_img]:mx-8 [&_img]:max-w-none animate-infinite-scroll" aria-hidden="true">
+                <img className='h-screen' style={{height: '120vh'}} src={worldmap} />
+            </div>
         </div>
+
+        {/* margin: auto;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0; */}
+            
 
         {/* <div className='h-full w-full fixed inline-flex flex-nowrap z-0'>
             <img className='object-none z-0' src={worldmap} />
