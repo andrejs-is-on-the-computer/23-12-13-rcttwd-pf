@@ -11,7 +11,7 @@ const Home = () => {
     <div name="home" className="w-full h-screen bg-[#44403c]">
 
         <div className='h-screen w-full inline-flex flex-nowrap absolute overflow-hidden 
-                        opacity-50'>
+                        opacity-20 blur-sm'>
             <div className='h-screen flex items-center justify-center align-middle 
             md:justify-start [&_img]:mx-8 [&_img]:max-w-none animate-infinite-scroll'
             >
