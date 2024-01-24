@@ -57,7 +57,7 @@ const Contact = () => {
       {/* max-w-[1000px] mx-auto px-12 ml-10 flex flex-col justify-center h-full */}
       <div className='col-span-1 hidden md:flex'></div>
       {/* Form Element */}
-      {loading ? <div className='col-span-3 flex flex-col justify-center 
+      {!loading ? <div className='col-span-3 flex flex-col justify-center 
                                 px-6 lg:px-52 sm:px-16'>
         <div className='pt-8'>
             <p className='text-4xl font-bold inline border-b-4 border-[#00c9af] text-gray-300'>Contact</p>
@@ -125,11 +125,11 @@ const Contact = () => {
           <span>andreibic89@gmail.com</span>
         </a>
       </div>
-      
+
       : 
       
-      <div className='col-span-3 flex m-auto justify-center align-middle
-      px-6 lg:px-52 sm:px-16'>
+      <div className='col-span-3 flex m-auto justify-center align-middle 
+          bg-[#292524] rounded-full p-[50px]'>
         <div className='text-white flex mr-6'>
           Sending
         </div>
