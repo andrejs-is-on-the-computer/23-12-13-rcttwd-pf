@@ -5,7 +5,7 @@ import { FaGlobe, FaGithub } from "react-icons/fa"
 
 const Work = () => {
   return (
-    <div name="work" className="min-h-screen w-full bg-[#292524] text-gray-300 py-20 sm:px-10 mx-auto">
+    <div name="work" className="min-h-screen relative w-full bg-[#292524] text-gray-300 py-20 sm:px-10 mx-auto">
         {/* Container */}
         <div className='mx-auto p-4 flex flex-col w-full h-full justify-center items-center'>
             
